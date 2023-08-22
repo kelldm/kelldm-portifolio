@@ -19,26 +19,6 @@ body{
 }
 
 
-/* navbar */
-.navbar {
-  align-items: center;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,.09);
-  display: flex;
-  font-size: 1rem;
-  height: auto;
-  justify-content: space-between;
-  left: 0;
-  padding: 25px 40px 25px 50px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-  font-weight: 600;
-  background-color: #ffffff;
-  color: #000000;
-}
-
 
 .site-content {
   display: flex;
