@@ -1,0 +1,9 @@
+.minhafoto{
+     border: 3px;
+       border-color: black;
+}
+
+      .minhafoto img {
+       border-radius: 100%;
+      
+      }
