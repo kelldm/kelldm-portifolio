@@ -9,7 +9,6 @@
     padding: 2rem 0 6rem;
 }
 
-
 .footer-title, .footer-link{
     color: #ffffff;
 }
@@ -17,20 +16,23 @@
 .footer-title{
     padding: 4rem;
     text-align: center;
-    margin-top: 3rem;
-    
+    margin-top: 3rem; 
 }
 
 .footer-link{
-    text-decoration: none;
+    border-bottom: #ffffff;
     font-family: 'Poppins';
     font-weight: 500;
     padding: 1rem;
     padding-bottom: 1rem;
+    transition: all ease-out 0.4s;
+    border-radius: 12px;
 }
 
 .footer-link:hover{
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 12px;
 }
 
 .footer-list{

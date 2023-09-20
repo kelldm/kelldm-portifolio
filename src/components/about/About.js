@@ -2,14 +2,17 @@ import React from "react";
 import './About.css';
 import riodejaneiro from "../../imgs/riodejaneiro.jpg";
 import DownloadButton from "./DownloadButton";
+import amoung from '../../imgs/amoungus.png';
 
 function About (){
     return(
                  <div id="about">
                     <div className="clearfix centered-content">
                         <div className="image-left">
-                    <img  src={riodejaneiro} alt="Rio de Janeiro" />
+                   <div className="rjdiv"> <img  src={riodejaneiro} alt="Rio de Janeiro" /></div>
+                    <div className="amoungus"> <img src={amoung}></img></div>
                     </div>
+
                     <div className="text-box">
                     <div className="text-header">
                      <h3 className="text-title">ABOUT ME</h3>

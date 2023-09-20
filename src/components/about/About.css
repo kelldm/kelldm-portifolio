@@ -3,6 +3,7 @@
 
 
 @import '~@fortawesome/fontawesome-free/css/all.css';
+
 .fa-flip-horizontal {
   transform: scaleX(-1);
 }
@@ -10,9 +11,30 @@
 
 body{
     margin: 5px;
-  
   }
 
+ .rjdiv:hover + .amoungus{
+    right: -40px;
+  }
+
+  .amoungus{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    transform: rotateZ(20deg);
+    z-index: -1;
+    transition: all ease-in-out 1s;
+  }
+
+.rjdiv{
+  z-index: 0;
+  position: relative;
+}
+
+.amoungus img{
+  width: 90px;
+  height: 100px;
+}
   
 .subtitle {
     font-size: 16px;
@@ -48,7 +70,7 @@ body{
      margin-right: 20px; 
      margin-bottom: 20px; 
      border-radius: 10px; 
-     overflow: hidden; 
+     position: relative;
     
   }
 
@@ -56,6 +78,8 @@ body{
    /* border-radius: 30px;*/
       max-width: 900px; 
      max-height: 900px; 
+     border-radius: 10px;
+ 
   }
   
   /* Texto em formato de caixa/quadrado à direita da imagem */
@@ -74,7 +98,7 @@ body{
     clear: both;
   }
 
-  /* Estilos para o título e o subtítulo */
+  
 .text-header {
   text-align: left;
   margin-bottom: 20px;
@@ -90,7 +114,7 @@ body{
 
 .text-subtitle {
   font-size: 20px;
-  font-family: 'Inter', sans-serif; /* Adicione a fonte 'Inter' aqui */
+  font-family: 'Inter', sans-serif; 
   color: #000;
   margin: 0;
   padding-bottom: 20px;
@@ -155,12 +179,6 @@ background-color: rgb(24, 161, 161);
 }
   
  
-.download-button:hover .icon-flip{
- 
-/*  transform: rotateY(180deg) translateX(30%);*/
-
-}
-
 
 @keyframes flip-icon {
   0% {

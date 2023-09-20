@@ -19,7 +19,6 @@ ul {
 
 
 body{
-  margin: 5px;
   font-family: 'Inter', sans-serif;
   background-color: #fafafa;
 }
@@ -94,8 +93,8 @@ body{
   padding: 20px;
     display: flex;
 }
-  
-  .social-icons .icon {
+
+.social-icons .icon {
     margin-right: 20px;  
     margin-top: 10px;
     margin-bottom: 20px;
@@ -119,16 +118,17 @@ body{
   border-right: 2px solid rgba(45,46,50,.5);
   color: #2d2e32;
   font-weight: 600;
-  margin-right: 4rem;
+  margin-right: 2rem;
   padding-right: 2rem;
 }
 
 
-.tech-stack ul{
+.tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 1rem;
   list-style: none;
+  align-items: center;
 }
 
 .tech-stack svg {
@@ -136,15 +136,11 @@ body{
   height: 32px;
   margin-right: 10px;
   color: rgb(24, 161, 161);
-
 }
 
 .skill{
     padding: 0px 10px;
-
 }
-
-
 
 .right-section {
   flex: 1;
