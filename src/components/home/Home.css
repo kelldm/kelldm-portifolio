@@ -1,6 +1,4 @@
-body{
-  padding: 3rem;
-}
+
 
 .minhafoto{
  padding-top: 3rem;
@@ -44,6 +42,7 @@ body{
 .content {
       display: flex;
       margin-top: 5px;
+      padding: 3rem;
     }
     
     .left-section {
