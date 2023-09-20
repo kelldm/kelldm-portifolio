@@ -1,6 +1,149 @@
+.minhafoto{
+ padding-top: 3rem;
 
+}
 
-      .minhafoto img {
-       border-radius: 100%;
-      border: 10px solid #575757;
+.minhafoto img {
+   border-radius: 100%;
+    border: 10px solid #575757; 
+    width: 450px;
+    
+ }
+
+      
+.title {
+      font-size: 80px;
+      font-weight: 900;
+      color: #000;
+    
+    }
+    
+    .subtitle {
+      font-size: 16px;
+      color: #777;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      border-right: 2px solid rgba(45,46,50,.5);
+      color: #2d2e32;
+      font-weight: 600;
+      margin-right: 2rem;
+      padding-right: 2rem;
+    }
+
+    /* conteúdo principal */
+.content {
+      display: flex;
+      margin-top: 5px;
+    }
+    
+    .left-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+      width: 100%;
+      background-color: #ffffff;
+      
+    }
+    
+    .social-icons {
+      margin-top: 20px;
+      padding: 20px;
+        display: flex;
+    }
+    
+    .social-icons .icon {
+        margin-right: 20px;  
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+     }
+    
+    
+    .icons svg {
+      margin-right: 10px;
+      font-size: 100px;
+    }
+    
+    
+    
+    .tech-stack {
+      margin-top: 20px;
+      color: #555;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+      align-items: center;
+    }
+    
+    .tech-stack svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      color: rgb(24, 161, 161);
+    }
+    
+    .skill{
+        padding: 0px 10px;
+    }
+    
+    .right-section {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: #ffff;
+  
+      
+    }
+    
+    .right-section img {
+      width: 30pw;
+      height: auto;
+    }
+    
+    
+    
+
+    @media screen and (max-width: 1440px) {
+      body {
+        font-size: 20px; 
+       
       }
+
+      .content {
+          padding: 3rem;
+          }
+          
+
+      
+      .minhafoto  {
+          
+           padding-left: 2rem;
+           }
+
+           .minhafoto img  {
+            width: 400px;
+            
+            }
+
+           
+       .title {
+            font-size: 70px;
+    }
+    .section-title {
+      font-size: 14px;
+     
+    }
+    
+
+}

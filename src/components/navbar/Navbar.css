@@ -25,4 +25,29 @@
    color: #000000;
    cursor: pointer;
   }
+
+  .logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3em;
+  }
+  
+  .logo svg{
+    width: 100px; 
+    height: auto;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    margin-right: 8em;
+  
+  }
+  
+  .menu li {
+    padding: 0 40px;
+    font-size: 1.5em;
+  }
+  
+  
   

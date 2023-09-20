@@ -189,3 +189,62 @@ background-color: rgb(24, 161, 161);
       transform: rotateY(0deg) translateX(0%);
   }
 }
+
+
+@media screen and (max-width: 1440px) {
+  body{
+    padding: 2rem;
+  }   
+
+  
+/* Colocar a imagem à esquerda com espaço da borda */
+.image-left {
+  float: left; 
+   margin-right: 20px; 
+   margin-bottom: 20px; 
+   border-radius: 10px; 
+   position: relative;
+  
+}
+.subtitle {
+  font-size: 14px;
+
+}
+
+.image-left img {
+ /* border-radius: 30px;*/
+    max-width: 700px; 
+   max-height: 700px; 
+   
+
+}
+
+.text-box {
+  max-width: 500px; 
+  padding: 1rem;
+}
+
+
+.text-header {
+text-align: left;
+margin-bottom: 0px;
+}
+
+.text-title {
+font-size: 14px;
+}
+
+.text-subtitle {
+font-size: 16px;
+}
+
+.download-button {
+font-size: 15px; /* Tamanho da fonte maior */
+}
+
+.download-button:hover{
+  transform: scale(1.1);
+  background-color: rgb(24, 161, 161);
+  }
+
+}
