@@ -22,12 +22,12 @@ body{
     bottom: 0;
     right: 0px;
     transform: rotateZ(20deg);
-    z-index: -1;
+    z-index: 0;
     transition: all ease-in-out 1s;
   }
 
 .rjdiv{
-  z-index: 0;
+  z-index: 1;
   position: relative;
 }
 
