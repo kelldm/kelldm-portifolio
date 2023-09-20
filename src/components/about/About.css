@@ -113,23 +113,61 @@ body{
   border-radius: 25px; 
   box-shadow: #000;
   cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
-
+  transition: all ease-in-out 0.6s;
   /* Adicione outros estilos desejados, como sombras, transições, etc. */
 }
+
+.download-button:hover{
+transform: scale(1.2);
+background-color: rgb(24, 161, 161);
+}
+
+
+
 
 /* CSS para o ícone de PDF dentro do botão */
 .download-icon {
   margin-right: 10px;
-  font-size: 18px; /* Tamanho do ícone */
+  font-size: 20px; /* Tamanho do ícone */
+  transform: rotateY(0deg);
+}
 
-
+.download-icon:hover{
+  color: #ffff;
 }
 
 /* CSS para o contêiner do botão de download */
 .download-button-container {
   padding-top: 40px; 
+}
 
+ 
 
+.download-button .icon-flip{
+  text-align: center;
+  transform: rotateY(0) translateX(0);
+  transition: all ease-in-out 0.4s;
+  transform-style:preserve-3d ;
+  backface-visibility: hidden;
+  animation: flip-icon 0.8s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
   
-  
+ 
+.download-button:hover .icon-flip{
+ 
+/*  transform: rotateY(180deg) translateX(30%);*/
+
+}
+
+
+@keyframes flip-icon {
+  0% {
+   
+      transform: rotateY(180deg) translateX(30%);
+  }
+  100% {
+      transform: rotateY(0deg) translateX(0%);
+  }
+}

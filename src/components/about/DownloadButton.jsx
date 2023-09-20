@@ -19,8 +19,9 @@ const DownloadButton = () => {
   return (
     <div className="download-button-container">
     <button className="download-button" onClick={handleDownload}>
-      <FaFile className="download-icon" />
+      <div className='icon-flip'><FaFile className="download-icon" />      </div>
       Download CV
+
     </button>
   </div>
   );

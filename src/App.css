@@ -21,6 +21,7 @@ ul {
 body{
   margin: 5px;
   font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
 }
 
 
@@ -134,7 +135,7 @@ body{
   width: 32px;
   height: 32px;
   margin-right: 10px;
-  color: rgb(5, 70, 66);
+  color: rgb(24, 161, 161);
 
 }
 
@@ -163,8 +164,8 @@ body{
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
-  background-color: #ffffff;
   color: #000;
 }

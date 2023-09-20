@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Footer from "./components/footer/Footer";
 
 
 const App = () => {
@@ -17,7 +19,13 @@ const App = () => {
          {/* Content */}
         <Home/>
         <About/>
+        <Skills/>
+     <Footer/>
+
       </main>
+      
+    
+     
      
     </div>
   );
