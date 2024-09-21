@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Skills from "./components/skills/Skills";
-import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar.tsx";
+import Header from "./components/header/Header.tsx";
+import About from "./components/about/About.tsx";
+import Footer from "./components/footer/Footer.tsx";
+
 
 
 const App = () => {
@@ -17,9 +17,8 @@ const App = () => {
      
       <main className="main">
          {/* Content */}
-        <Home/>
+        <Header/>
         <About/>
-        <Skills/>
      <Footer/>
 
       </main>
