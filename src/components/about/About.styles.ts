@@ -4,10 +4,6 @@ export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&family=Varela+Round&display=swap');
   @import '~@fortawesome/fontawesome-free/css/all.css';
 
-  body {
-    margin: 5px;
-  }
-
   .fa-flip-horizontal {
     transform: scaleX(-1);
   }
