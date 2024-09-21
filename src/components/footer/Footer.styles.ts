@@ -3,6 +3,22 @@ import styled from 'styled-components';
 export const Footer = styled.footer`
   background-color: #000000;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+   
+  @media screen and (min-width: 768px) {
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
+  align-items:center;
+  }
+
+   @media screen and (min-width: 1440px) {
+  display:flex;
+  justify-content: space-between;
+  flex-direction:row;
+  align-items:center;
+  }
+
+
 `;
 
 
@@ -11,6 +27,16 @@ export const Title = styled.h2`
   padding: 4rem;
   text-align: center;
   margin-top: 3rem;
+  
+  @media screen and (min-width: 768px) {
+   
+
+  }
+
+  @media screen and (min-width: 1440px) {
+   text-align: left;
+    margin-top: 1.5rem;
+  }
 `;
 
 export const Link = styled.a`
@@ -38,18 +64,26 @@ export const LinkList = styled.ul`
   flex-direction:column;
   align-items:center;
   margin-bottom: 5rem;
+
+  @media screen and (min-width: 768px) {
+     gap:2rem;
+      margin-bottom: 0;
+    
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex-direction:row;
+     gap:10rem;
+      margin-bottom: 0;
+
+  }
   
 `;
 export const Item = styled.li`
 padding:1rem;
 `;
 
-export const FooterSocial = styled.div`
-  display: flex;
-  justify-content: center;
-  column-gap: 1.125rem;
-  padding: 20px;
-`;
+
 
 export const FooterSocialLink = styled.a`
   background-color: #ffffff;
@@ -65,12 +99,24 @@ export const FooterSocialLink = styled.a`
 `;
 
 export const FooterCopy = styled.span`
-  display: block;
+  display: flex;
+  align-items:center;
   margin-top: 1.5rem;
   color: #ffffff;
   text-align: center;
   font-size: 13px;
   padding: 2.5rem;
+  
+  @media screen and (min-width: 768px) {
+    padding: 0.5rem;
+    
+    
+  }
+
+   @media screen and (min-width: 1440px) {
+   padding:2rem;
+  }
+
 `;
 
 export const FooterSocialIcon = styled.i`

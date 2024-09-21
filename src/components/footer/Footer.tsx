@@ -7,7 +7,6 @@ import {
   Title,
   Link,
   LinkList,
-  FooterSocial,
   FooterCopy
 } from './Footer.styles.ts';
 
@@ -44,7 +43,7 @@ function FooterComponent() {
           </Item>
         </LinkList>
 
-      
+         
           <Social color="white"/>
     
         <FooterCopy>

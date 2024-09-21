@@ -58,6 +58,7 @@ const Header = () => {
         I’m Raquel Lins. A creative and passionate Front-end Developer based in Rio de Janeiro, Brazil.<br/>
         I love games, technology and animals.
         </Subtitle>
+    
         <Social />
       <Space/>
           <TechStackTitle>Tech Stack</TechStackTitle>

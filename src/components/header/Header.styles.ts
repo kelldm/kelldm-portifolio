@@ -10,12 +10,11 @@ export const SiteContent = styled.div`
   box-sizing: border-box;
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
     gap: 0;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 3rem;
+    padding: 0;
   }
 `;
 export const Space = styled.div`
@@ -38,16 +37,24 @@ export const Title = styled.h1`
   width: 100vw;
   height: 100wh;
   box-sizing: border-box;
-
   transform: translate(-50%, -50%);
   text-wrap: wrap;
   text-align: left;
+
   @media screen and (min-width: 768px) {
-    font-size: 40px;
+  padding-top: 10rem;
+  margin-left: 0rem;
+  width: 100vw;
+  height: 100vh;
   }
 
   @media screen and (min-width: 1440px) {
-    font-size: 60px;
+  padding: 1rem;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  margin-left: 0rem;
+   width: 80vw;
+  height: 80vh;
   }
 `;
 
@@ -59,6 +66,12 @@ export const Subtitle = styled.p`
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
+
+   @media screen and (min-width: 768px) {
+    font-size: 16px;
+      margin-top: 5rem;
+  margin-bottom: 5rem;
+  }
 `;
 
 export const TechStackTitle = styled.h1`
@@ -70,11 +83,13 @@ export const TechStackTitle = styled.h1`
   color: #2d2e32;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+  margin-top: 20rem;
+  font-size: 35px;
+  padding:2rem;
   }
 
   @media screen and (min-width: 1440px) {
-    font-size: 18px;
+    font-size: 40px;
   }
 `;
 
@@ -99,10 +114,17 @@ export const TechStack = styled.div`
   @media screen and (max-width: 768px) {
     justify-content: space-around; 
     width: 100%;
+    padding:2rem;
+  
+
+    
   }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(50% - 8px); 
+    margin-top:5rem;
+    margin-bottom:20rem;
+  }
 `;
 
 export const MinhaFoto = styled.div`
@@ -113,12 +135,14 @@ export const MinhaFoto = styled.div`
   padding-bottom:5rem;
 
   @media screen and (min-width: 768px) {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
+      padding-bottom:2.5rem;
+
   }
 
   @media screen and (min-width: 1440px) {
     padding-top: 3rem;
-    padding-left: 2rem;
+    padding-left: 0.5rem;
   }
 
   img {
@@ -137,7 +161,7 @@ export const MinhaFoto = styled.div`
     }
 
     @media screen and (min-width: 1440px) {
-      width: 450px;
+      width: 300px;
     }
   }
 `;

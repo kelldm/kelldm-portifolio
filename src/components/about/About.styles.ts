@@ -11,6 +11,13 @@ export const GlobalStyle = createGlobalStyle`
   .fa-flip-horizontal {
     transform: scaleX(-1);
   }
+     @media screen and (min-width: 768px) {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
+  }
+
 `;
 
 export const Subtitle = styled.p`
@@ -20,7 +27,7 @@ export const Subtitle = styled.p`
   text-align: justify; 
 
   @media screen and (max-width: 1440px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 
@@ -36,27 +43,6 @@ export const TitleCenter = styled.div`
 `;
 
 
-export const ImageLeft = styled.div`
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  position: relative;
-
-  img {
-    max-width: 900px;
-    max-height: 900px;
-    border-radius: 10px;
-  }
-
-  @media screen and (max-width: 1440px) {
-    img {
-      max-width: 700px;
-      max-height: 700px;
-    }
-  }
-`;
-
 export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -70,9 +56,11 @@ export const TextBox = styled.div`
   margin-left: 20px;
   overflow: hidden;
 
-  @media screen and (max-width: 1440px) {
-    max-width: 500px;
+  @media screen and (min-width: 768px) {
     padding: 1rem;
+    
+     max-width: 1500px;
+
   }
 `;
 
@@ -81,6 +69,15 @@ export const Clearfix = styled.div`
     content: "";
     display: table;
     clear: both;
+  }
+
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
   }
 `;
 
@@ -101,7 +98,7 @@ export const TextTitle = styled.h4`
   padding-bottom: 10px;
 
   @media screen and (max-width: 1440px) {
-    font-size: 14px;
+    font-size: 20px;
   }
 `;
 
@@ -112,10 +109,16 @@ export const TextSubtitle = styled.h5`
   margin: 0;
   padding-bottom: 20px;
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 764px) {
     font-size: 16px;
   }
+
+   @media screen and (max-width: 1440px) {
+    font-size: 20px;
+  }
+
 `;
+
 
 
 export const DownloadButton = styled.button`
@@ -148,18 +151,4 @@ export const DownloadButtonContainer = styled.div`
   justify-content: center;
 `;
 
-// Media query wrapper
-const media = {
-  desktop: (styles) => `
-    @media screen and (max-width: 1440px) {
-      ${styles}
-    }
-  `,
-};
 
-// You can use the media query wrapper like this:
-// const SomeComponent = styled.div`
-//   ${media.desktop`
-//     // Your styles here
-//   `}
-// `;

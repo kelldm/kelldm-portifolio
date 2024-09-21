@@ -9,12 +9,14 @@ export const SocialIcons = styled.div`
   margin-bottom: 5rem;
 
   @media screen and (min-width: 768px) {
-    flex-direction: column; 
-    gap: 0; 
+   margin-top:10rem;
+    
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 3rem;
+  padding:5 rem; 
+  padding-top: 0.1rem;
+  margin-bottom: 10rem;
   }
 `;
 
