@@ -45,16 +45,16 @@ export const TextBox = styled.div`
   justify-content: center;
   align-items: left;
   box-sizing: border-box;
-  margin: 1rem;
   max-width: 600px;
-  padding: 30px;
   border-radius: 10px;
-  margin-left: 20px;
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
     padding: 1rem;
     max-width: 1500px;
+    margin: 1rem;
+    margin-left:4.4rem;
+
 
   }
 `;
@@ -75,26 +75,27 @@ margin:1rem;
 }
 
 @media screen and (min-width: 1440px) {
-  margin:18rem;
+ 
 }
 `;
 
 
 export const Container = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 gap: 1rem;
-margin:1rem;
 
 
 @media screen and (min-width: 768px) {
   margin:1rem;
+  flex-direction: row;
 
 }
 
 @media screen and (min-width: 1440px) {
   margin:2rem;
+  flex-direction: row;
 }
 `;
 
@@ -153,7 +154,7 @@ export const DownloadButton = styled.button`
   cursor: pointer;
   transition: all ease-in-out 0.6s;
   &:hover {
-    background-color: #40e0d0;
+    background-color: #fc393a;
   }
 
   @media screen and (max-width: 1440px) {
@@ -163,9 +164,17 @@ export const DownloadButton = styled.button`
 
 
 export const DownloadButtonContainer = styled.div`
-align-items:left;
+display:flex;
+flex-direction:column;
+align-items:center;
 margin-top:16px;
 padding: 0;
+
+ @media screen and (min-width: 768px) {
+ flex-direction:row;
+ align-items:left;
+    
+  }
 `;
 
 

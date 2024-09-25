@@ -9,7 +9,7 @@ import {
   DownloadButtonContainer,
   DownloadButton,
   TextSubtitle,
-  Container
+  Container, 
 } from "./About.styles.ts";
 import { MinhaFoto } from "../header/Header.styles.ts";
 import minhaFoto from "../../imgs/me.jpg";
@@ -29,7 +29,6 @@ function About() {
             <TextSubtitle>
               A Passionate Developer based in Rio de Janeiro, Brazil. 📍
             </TextSubtitle>
-            {/* https://tenor.com/pt-BR/view/gatuwu-gif-12909478339905065526 */}
           </TextHeader>
           <Subtitle>
             I'm Raquel, a 23-year-old student at INFNET College in Rio de

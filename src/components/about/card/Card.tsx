@@ -1,39 +1,33 @@
 import React from "react";
 import {
-   CardContainer, CardDetails, TextTitle, TextBody, Container
+   CardContainer, CardDetails, TextTitle, TextBody, Container, Title
   } from "./Card.styles.ts";
 
 function Card() {
   return (
-    <>
-    <Container>
+    <><Title>Diferenciais</Title>
+    <Container>     
     <CardContainer>
         <CardDetails>
-            <TextTitle>Card title</TextTitle>
-            <TextBody>Here are the details of the card</TextBody>
+            <TextTitle>Interface de Alta fidelidade</TextTitle>
+            <TextBody>Implemento fielmente a interface, prezando pela melhor experiência do usuário.</TextBody>
         </CardDetails>
     </CardContainer>
 
     <CardContainer>
         <CardDetails>
-            <TextTitle>Card title</TextTitle>
-            <TextBody>Here are the details of the card</TextBody>
+            <TextTitle>Metodologias Ágeis</TextTitle>
+            <TextBody>Feedbacks, interações constantes, garantindo agilidade e eficiência.</TextBody>
         </CardDetails>
     </CardContainer>
 
     <CardContainer>
         <CardDetails>
-            <TextTitle>Card title</TextTitle>
-            <TextBody>Here are the details of the card</TextBody>
+            <TextTitle>Clean Code</TextTitle>
+            <TextBody>Seguindo as melhores práticas do mercado para desenvolver e manter a qualidade do código.</TextBody>
         </CardDetails>
     </CardContainer>
 
-    <CardContainer>
-        <CardDetails>
-            <TextTitle>Card title</TextTitle>
-            <TextBody>Here are the details of the card</TextBody>
-        </CardDetails>
-    </CardContainer>
     </Container>
     </>
   );

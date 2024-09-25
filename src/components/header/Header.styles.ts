@@ -5,16 +5,17 @@ export const SiteContent = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   gap: 16px;
-  box-sizing: border-box;
- 
-
+  padding:1rem;
+  
+   
   @media screen and (min-width: 768px) {
     gap: 0;
     margin-left:3rem;
+    padding:3rem;
   }
 
   @media screen and (min-width: 1440px) {
-    margin-left:18rem;
+    margin-left:0;
   }
 `;
 export const Space = styled.div`
@@ -56,7 +57,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.p`
   font-size: 14px;
   color: #777;
-  padding-top: 3rem;
+  
   font-weight: 600;
   text-align: left;
   margin-top: 2rem;
@@ -64,8 +65,8 @@ export const Subtitle = styled.p`
 
    @media screen and (min-width: 768px) {
     font-size: 16px;
-      margin-top: 5rem;
-  margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 `;
 
@@ -89,17 +90,17 @@ export const TechStackTitle = styled.h1`
 `;
 
 export const TechStack = styled.div`
-  display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap:10px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
   svg {
     width:50px;
     height: 50px;
-    color: #40e0d0;
+    color: #fc393a;
   }
 
   .item {
@@ -108,11 +109,7 @@ export const TechStack = styled.div`
 
   @media screen and (max-width: 768px) {
     justify-content: space-around; 
-    width: 100%;
-    padding:2rem;
-  
-
-    
+    width: 100%;      
   }
 
   @media screen and (min-width: 768px) {
@@ -129,24 +126,26 @@ export const TechStack = styled.div`
 export const MinhaFoto = styled.div`
   padding-top: 4rem;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: left;
-  padding-bottom:5rem;
+  padding-bottom:2.5rem;
+
 
   @media screen and (min-width: 768px) {
     padding-top: 0.5rem;
-      padding-bottom:2.5rem;
-
+     justify-content: left;
   }
 
   @media screen and (min-width: 1440px) {
     padding-top: 3rem;
     padding-left: 0.5rem;
+    padding-bottom:5rem;
+
   }
 
   img {
     border-radius: 16px;
-    width: 320px;
+    width: 350px;
     filter: grayscale(100%); 
     transition: filter 1s ease-in-out;
     }
@@ -164,3 +163,21 @@ export const MinhaFoto = styled.div`
     }
   }
 `;
+export const float = keyframes` {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-25px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}`;
+export const Gato = styled.div`
+  animation: ${float} 2s infinite linear;
+  }
+`;
+

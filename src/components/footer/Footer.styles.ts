@@ -101,6 +101,7 @@ export const FooterSocialLink = styled.a`
 export const FooterCopy = styled.span`
   display: flex;
   align-items:center;
+  justify-content:center;
   margin-top: 1.5rem;
   color: #ffffff;
   text-align: center;
@@ -109,7 +110,6 @@ export const FooterCopy = styled.span`
   
   @media screen and (min-width: 768px) {
     padding: 0.5rem;
-    
     
   }
 
