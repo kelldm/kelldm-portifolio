@@ -3,18 +3,18 @@ import styled, { keyframes } from "styled-components";
 export const SiteContent = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
+  justify-content: flex-start;
   gap: 16px;
   box-sizing: border-box;
+ 
 
   @media screen and (min-width: 768px) {
     gap: 0;
+    margin-left:3rem;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 0;
+    margin-left:18rem;
   }
 `;
 export const Space = styled.div`
@@ -23,10 +23,6 @@ export const Space = styled.div`
   padding: 5rem;
 `;
 export const Title = styled.h1`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 60px;
   font-weight: 900;
   padding: 3rem;
@@ -49,11 +45,10 @@ export const Title = styled.h1`
   }
 
   @media screen and (min-width: 1440px) {
-  padding: 1rem;
-  padding-top: 25rem;
+  padding-top: 20rem;
   padding-bottom: 40rem;
   margin-left: 0rem;
-   width: 80vw;
+  width: 80vw;
   height: 80vh;
   }
 `;
@@ -63,7 +58,7 @@ export const Subtitle = styled.p`
   color: #777;
   padding-top: 3rem;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   margin-top: 2rem;
   margin-bottom: 3rem;
 
@@ -76,7 +71,7 @@ export const Subtitle = styled.p`
 
 export const TechStackTitle = styled.h1`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   font-size: 40px;
   font-weight: bold;
@@ -125,13 +120,17 @@ export const TechStack = styled.div`
     margin-top:5rem;
     margin-bottom:20rem;
   }
+
+  @media screen and (min-width: 1440px) {
+    justify-content: flex-start;
+  }
 `;
 
 export const MinhaFoto = styled.div`
   padding-top: 4rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   padding-bottom:5rem;
 
   @media screen and (min-width: 768px) {

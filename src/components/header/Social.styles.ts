@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SocialIcons = styled.div`
   display: flex;
   flex-direction: row; 
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 2rem; 
   margin-bottom: 5rem;

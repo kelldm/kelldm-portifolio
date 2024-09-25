@@ -9,6 +9,7 @@ import {
   DownloadButtonContainer,
   DownloadButton,
   TextSubtitle,
+  Container
 } from "./About.styles.ts";
 import { MinhaFoto } from "../header/Header.styles.ts";
 import minhaFoto from "../../imgs/me.jpg";
@@ -18,15 +19,17 @@ function About() {
     <>
       <GlobalStyle />
       <Clearfix id="about">
-        <TextBox>
-          <MinhaFoto>
+        <Container>
+        <MinhaFoto>
             <img src={minhaFoto} alt="Minha Foto" />
           </MinhaFoto>
+        <TextBox>
           <TextHeader>
             <TextTitle>ABOUT ME</TextTitle>
             <TextSubtitle>
               A Passionate Developer based in Rio de Janeiro, Brazil. 📍
             </TextSubtitle>
+            {/* https://tenor.com/pt-BR/view/gatuwu-gif-12909478339905065526 */}
           </TextHeader>
           <Subtitle>
             I'm Raquel, a 23-year-old student at INFNET College in Rio de
@@ -42,10 +45,12 @@ function About() {
             about the possibilities ahead. Let’s connect and explore how we can
             create innovative, user-centric solutions together!
           </Subtitle>
-        </TextBox>
-        <DownloadButtonContainer>
+          <DownloadButtonContainer>
           <DownloadButton>Download CV</DownloadButton>
         </DownloadButtonContainer>
+        </TextBox>
+        </Container>
+        
       </Clearfix>
     </>
   );

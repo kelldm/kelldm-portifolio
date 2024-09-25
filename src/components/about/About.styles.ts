@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   .fa-flip-horizontal {
     transform: scaleX(-1);
   }
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
   display:flex;
   justify-content: center;
   align-items:center;
@@ -54,28 +54,50 @@ export const TextBox = styled.div`
 
   @media screen and (min-width: 768px) {
     padding: 1rem;
-    
-     max-width: 1500px;
+    max-width: 1500px;
 
   }
 `;
 
 export const Clearfix = styled.div`
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+gap: 16px;
+box-sizing: border-box;
+margin:1rem;
 
-  
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 
-  }
+@media screen and (min-width: 768px) {
+  gap: 0;
+  margin:3rem;
+
+}
+
+@media screen and (min-width: 1440px) {
+  margin:18rem;
+}
 `;
+
+
+export const Container = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 1rem;
+margin:1rem;
+
+
+@media screen and (min-width: 768px) {
+  margin:1rem;
+
+}
+
+@media screen and (min-width: 1440px) {
+  margin:2rem;
+}
+`;
+
 
 export const TextHeader = styled.div`
   text-align: left;
@@ -141,10 +163,9 @@ export const DownloadButton = styled.button`
 
 
 export const DownloadButtonContainer = styled.div`
-  padding: 1rem;
-   padding-bottom: 4rem;
-  display: flex;
-  justify-content: center;
+align-items:left;
+margin-top:16px;
+padding: 0;
 `;
 
 

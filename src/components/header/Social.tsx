@@ -10,13 +10,13 @@ function Social({ color = 'black' }: SocialProps) {
   return (
     <SocialIcons>
       <SocialLink href='https://www.linkedin.com/in/raquelldm/' target='_blank' color={color}>
-        <BsLinkedin size={50} />
+        <BsLinkedin size={40} />
       </SocialLink>
       <SocialLink href='https://github.com/kelldm' target='_blank' color={color}>
-        <BsGithub size={50} />
+        <BsGithub size={40} />
       </SocialLink>
       <SocialLink href='https://www.instagram.com/kelldm_/' target='_blank' color={color}>
-        <BsInstagram size={50} />
+        <BsInstagram size={40} />
       </SocialLink>
     </SocialIcons>
   );
