@@ -1,91 +1,97 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
+
 
 export const SiteContent = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding:1rem;
   
    
   @media screen and (min-width: 768px) {
-    gap: 0;
-    margin-left:3rem;
-    padding:3rem;
+    margin-left:1rem;
+    padding:1rem;
+    gap:5rem;
   }
 
-  @media screen and (min-width: 1440px) {
-    margin-left:0;
-  }
+ 
 `;
-export const Space = styled.div`
-  width: 100%;
-  height: 100%;
-  padding: 5rem;
+export const Hime = styled.img`
+  position: relative;
+  top: 50%; 
+  right: 0; 
+  width:100vh;
+  transform: translateY(-40%);
+  margin-top:10rem;
+  height: auto; 
+  z-index: 999; 
+
 `;
-export const Title = styled.h1`
+
+export const ContainerHime = styled(motion.div)`
+  display: flex; 
+  align-items: flex-start; 
+  margin-left:40rem;
+  justify-content:space-around;
+`;
+
+export const ContainerText= styled(motion.div)`
+  display: flex; 
+  flex-direction:column;
+  align-items: left; 
+  justify-content:space-around;
+  left:150px;
+  position:relative;
+  gap:16px;
+
+`;
+
+
+export const Title = styled(motion.h1)`
   font-size: 60px;
-  font-weight: 900;
-  padding: 3rem;
-  padding-top: 12rem;
-  padding-bottom: 20rem;
-  margin-left: 1rem;
-  color: #000;
-  width: 100vw;
-  height: 100wh;
+  display:flex;
+  color: #FFFF;
   box-sizing: border-box;
-  transform: translate(-50%, -50%);
-  text-wrap: wrap;
-  text-align: left;
-
-  @media screen and (min-width: 768px) {
-  padding-top: 10rem;
-  margin-left: 0rem;
-  width: 100vw;
-  height: 100vh;
-  }
-
-  @media screen and (min-width: 1440px) {
-  padding-top: 20rem;
-  padding-bottom: 40rem;
-  margin-left: 0rem;
-  width: 80vw;
-  height: 80vh;
+  font-family:'Kotta One', sans serif;
+  margin-top:10rem;
+  justify-content: left;
+  align-items:left;
   }
 `;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: left;
+  gap:2rem;
 
+`;
 export const Subtitle = styled.p`
   font-size: 14px;
   color: #777;
   
   font-weight: 600;
   text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+
 
    @media screen and (min-width: 768px) {
     font-size: 16px;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
   }
 `;
 
 export const TechStackTitle = styled.h1`
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: 40px;
+  font-size: 16px;
   font-weight: bold;
   color: #2d2e32;
 
   @media screen and (min-width: 768px) {
-  margin-top: 20rem;
-  font-size: 35px;
-  padding:2rem;
+  font-size: 16px;
   }
 
   @media screen and (min-width: 1440px) {
-    font-size: 40px;
+    font-size: 20px;
   }
 `;
 
@@ -98,71 +104,20 @@ export const TechStack = styled.div`
     flex-wrap: wrap;
 
   svg {
-    width:50px;
-    height: 50px;
-    color: #fc393a;
+    width:32px;
+    height: 32px;
+    color: #FF9BC6;
   }
 
   .item {
-  padding: 3rem;
+  padding: 1rem;
   }
 
-  @media screen and (max-width: 768px) {
-    justify-content: space-around; 
-    width: 100%;      
-  }
 
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(50% - 8px); 
-    margin-top:5rem;
-    margin-bottom:20rem;
-  }
 
-  @media screen and (min-width: 1440px) {
-    justify-content: flex-start;
-  }
+ 
 `;
 
-export const MinhaFoto = styled.div`
-  padding-top: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  padding-bottom:2.5rem;
-
-
-  @media screen and (min-width: 768px) {
-    padding-top: 0.5rem;
-     justify-content: left;
-  }
-
-  @media screen and (min-width: 1440px) {
-    padding-top: 3rem;
-    padding-left: 0.5rem;
-    padding-bottom:5rem;
-
-  }
-
-  img {
-    border-radius: 16px;
-    width: 350px;
-    filter: grayscale(100%); 
-    transition: filter 1s ease-in-out;
-    }
-
-  img:hover {
-    filter: grayscale(0);
-  }
-
-    @media screen and (min-width: 768px) {
-      width: 300px;
-    }
-
-    @media screen and (min-width: 1440px) {
-      width: 300px;
-    }
-  }
-`;
 export const float = keyframes` {
   0% {
     transform: translatey(0px);

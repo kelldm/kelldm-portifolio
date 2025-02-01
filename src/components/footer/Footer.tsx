@@ -13,39 +13,6 @@ import {
 function FooterComponent() {
   return (
     <Footer>
-        <Title>
-          <img src={logofooter} alt="Logo" />
-        </Title>
-
-        <LinkList>
-          <Item>
-            <Link href="#">
-              Home
-            </Link>
-          </Item>
-
-          <Item>
-            <Link href="#about">
-              About
-            </Link>
-          </Item>
-
-          <Item>
-            <Link href="#skills">
-              Skills
-            </Link>
-          </Item>
-
-          <Item>
-            <Link href="#contact">
-              Contact
-            </Link>
-          </Item>
-        </LinkList>
-
-         
-          <Social color="white"/>
-    
         <FooterCopy>
           &#169; Raquel Lins. All rights reserved.
         </FooterCopy>

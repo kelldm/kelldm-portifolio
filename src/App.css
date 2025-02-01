@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,6 +34,11 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh; 
+  background-image: url('./imgs/petals.png'); 
+  background-position: right;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  transform: rotateY(180deg);
 }
 
 
@@ -41,7 +50,11 @@ body{
   width: 100%;
   font-family: 'Inter', sans-serif;
   color: #000;
-  background-color: #ffffff;
-
+  background-color: #ffbdd9;
+  background-image: url('./imgs/petals.png'); 
+  background-position: top center;
+  background-repeat: repeat; 
+  background-size: cover; 
 }
+
 

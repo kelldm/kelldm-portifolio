@@ -3,10 +3,8 @@ import styled from 'styled-components';
 export const StyledNavbar = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
-  position: fixed;
+  justify-content: center;
+  box-shadow: 0 0 10px #FF9BC6;
   top: 0;
   left: 0;
   width: 100%;
@@ -14,11 +12,11 @@ export const StyledNavbar = styled.nav`
   z-index: 200;
   font-size: 1rem;
   font-weight: 600;
-  color: #000;
+  color: #fff;
 
   @media screen and (max-width: 768px) {
-    padding: 15px 20px; // Ajuste de padding em mobile
-    flex-direction: row; // Mantenha em linha
+    padding: 15px 20px; 
+    flex-direction: row;
     justify-content: space-between;
     gap:12rem;;
   }
@@ -30,27 +28,26 @@ export const Logo = styled.div`
   margin-left: 3em;
 
   svg {
-    width: 60px; // Tamanho reduzido em mobile
+    width: 60px; 
     height: auto;
   }
 
   @media screen and (max-width: 768px) {
-    margin-left: 0; // Remove a margem em mobile
+    margin-left: 0; 
     svg {
-      width: 40px; // Tamanho ainda menor em mobile
+      width: 40px; 
     }
   }
 `;
 
 export const MenuButton = styled.button`
-  display: none; // Esconder o botão por padrão
+  display: none; 
   background: transparent;
   border: none;
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
-    display: block; // Mostrar o botão em mobile
-    justify-content: end;
+    display: block;
   }
 `;
 
@@ -58,11 +55,10 @@ export const Menu = styled.ul<{ isOpen: boolean }>`
   list-style-type: none;
   display: flex;
   margin-right: 8em;
-  transition: max-height 0.3s ease; 
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    max-height: ${({ isOpen }) => (isOpen ? '500px' : '0')}; // Controle da altura
+    max-height: ${({ isOpen }) => (isOpen ? '500px' : '0')}; 
     overflow: hidden;
     margin: 0; 
   }
@@ -73,17 +69,23 @@ export const MenuItem = styled.li`
   font-size: 1.5em;
 
   @media screen and (max-width: 768px) {
-    padding: 10px 0; // Ajusta padding em mobile
-    font-size: 1.2em; // Ajusta tamanho da fonte em mobile
+    padding: 10px 0;
+    font-size: 1.2em; 
   }
 `;
 
 export const NavLink = styled.a`
   text-decoration: none;
-  color: #000;
+  color: #fff;
   cursor: pointer;
+  padding:10px;
+
+
 
   &:hover {
-    text-decoration: underline; // Exemplo de efeito de hover
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+    background: #fff;
+    color: #FF9BC6;
+    border-radius: 5px;
   }
 `;

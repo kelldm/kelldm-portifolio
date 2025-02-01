@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MdLightbulb } from "react-icons/md";
 import logo from '../../imgs/logo.svg';
 import { StyledNavbar, Logo, MenuButton, Menu, MenuItem, NavLink } from './Navbar.styles.ts';
 
@@ -12,13 +13,8 @@ function Navbar() {
   return (
     <StyledNavbar>
       <Logo>
-        <img src={logo} alt="Logo" />
+
       </Logo>
-      <MenuButton onClick={toggleMenu}>
-        <span style={{ display: 'block', width: '30px', height: '3px', background: '#000', margin: '5px 0' }}></span>
-        <span style={{ display: 'block', width: '30px', height: '3px', background: '#000', margin: '5px 0' }}></span>
-        <span style={{ display: 'block', width: '30px', height: '3px', background: '#000', margin: '5px 0' }}></span>
-      </MenuButton>
       <Menu isOpen={isOpen}>
         <MenuItem>
           <NavLink href="#home">Home</NavLink>
@@ -31,6 +27,9 @@ function Navbar() {
         </MenuItem>
         <MenuItem>
           <NavLink href="#contact">Contact</NavLink>
+        </MenuItem>
+        <MenuItem>
+        <MdLightbulb />
         </MenuItem>
       </Menu>
     </StyledNavbar>

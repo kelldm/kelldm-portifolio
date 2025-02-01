@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import {
   SiJavascript,
   SiHtml5,
@@ -9,7 +11,6 @@ import {
   SiTailwindcss,
   SiStyledcomponents,
 } from "react-icons/si";
-import { useGlitch } from "react-powerglitch";
 import Social from "./Social.tsx";
 import {
   SiteContent,
@@ -19,57 +20,56 @@ import {
   TechStack,
   MinhaFoto,
   float,
+  Container,
   Gato,
-  Space,
+  Hime, ContainerHime, ContainerText
 } from "./Header.styles.ts";
 import { TypeAnimation } from "react-type-animation";
-import FloatingImage from "./FloatingImage.jsx";
+import hime from "../../imgs/hime.png"
+import Balloon from "../Balloon.tsx";
+import PlayInput from "../PlayInput.tsx";
+
+
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.9 } } 
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1 } }
+};
+
 
 const Header = () => {
-  const glitch = useGlitch();
 
   return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={containerVariants}
+    >
     <SiteContent>
-      <Title ref={glitch.ref}>HELLO, WORLD.</Title>
-      <TypeAnimation
-        sequence={[
-          3000,
-          "Welcome!",
-          2000,
-          "Welcome,",
-          200,
-          "Welcome, good to see you!",
-          4000,
-          ":)",
-          3000,
-        ]}
-        speed={50}
-        style={{ fontSize: "2em", fontWeight: "900", alignItems: "left" }}
-        repeat={Infinity}
-      />
-     <FloatingImage/>
+      <Container>
+      <Title variants={itemVariants} >Welcome to my world</Title>
+         <ContainerHime variants={itemVariants}>
+          <ContainerText>
+          <Balloon
+              text="Hi! 👋🏻 Let me introduce myself, I’m Raquel Lins, a creative and passionate Front-end Developer based in Rio de Janeiro, Brazil."
+              width="450px"
+              height="50px"
+            />
 
-      <Subtitle>
-        I’m Raquel Lins. A creative and passionate Front-end Developer based in
-        Rio de Janeiro, Brazil.
-        <br />I love games, technology and animals.
-      </Subtitle>
-      <Social />
+        <PlayInput />
+        </ContainerText>
 
-      <Space />
-
-      <TechStackTitle>Tech Stack</TechStackTitle>
-      <TechStack>
-        <SiHtml5 className="item" />
-        <SiCss3 className="item" />
-        <SiJavascript className="item" />
-        <SiReact className="item" />
-        <SiBootstrap className="item" />
-        <SiSass className="item" />
-        <SiTailwindcss className="item" />
-        <SiStyledcomponents className="item" />
-      </TechStack>
-    </SiteContent>
+      <Hime src={hime} alt="Hime"/>
+    </ContainerHime>
+  
+      </Container>
+    </SiteContent></motion.div>
   );
 };
 

@@ -4,7 +4,6 @@ import Navbar from "./components/navbar/Navbar.tsx";
 import Header from "./components/header/Header.tsx";
 import About from "./components/about/About.tsx";
 import Footer from "./components/footer/Footer.tsx";
-import Card from "./components/about/card/Card.tsx";
 
 
 
@@ -20,9 +19,9 @@ const App = () => {
       <main className="main">
          {/* Content */}
         <Header/>
-        <Card/>
-        <About/>
-     <Footer/>
+         <About/>
+    
+        <Footer/>
 
       </main>
       

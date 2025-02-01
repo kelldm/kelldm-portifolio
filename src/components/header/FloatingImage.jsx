@@ -11,17 +11,19 @@ const float = keyframes`
 
 const FloatingImageStyle = styled.img`
   animation: ${float} 3s ease-in-out infinite;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius:16px;
+
+  border-radius:100%;
+
+    @media (min-width: 1080px) {
+  
+  }
 `;
 
 const Container = styled.div`
-padding-top:3rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: top;
+  align-items: top;
+  padding-top:10rem;
 
 `;
 

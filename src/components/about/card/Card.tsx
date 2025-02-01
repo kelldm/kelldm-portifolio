@@ -2,29 +2,33 @@ import React from "react";
 import {
    CardContainer, CardDetails, TextTitle, TextBody, Container, Title
   } from "./Card.styles.ts";
+import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 
 function Card() {
   return (
-    <><Title>Diferenciais</Title>
+    <>
     <Container>     
     <CardContainer>
         <CardDetails>
-            <TextTitle>Interface de Alta fidelidade</TextTitle>
-            <TextBody>Implemento fielmente a interface, prezando pela melhor experiência do usuário.</TextBody>
+       <a href='https://www.linkedin.com/in/raquelldm/' target="_blank" rel="noopener noreferrer">
+         <BsLinkedin size={40} color="#FF338B"/>
+        </a>
         </CardDetails>
     </CardContainer>
 
     <CardContainer>
         <CardDetails>
-            <TextTitle>Metodologias Ágeis</TextTitle>
-            <TextBody>Feedbacks, interações constantes, garantindo agilidade e eficiência.</TextBody>
+           <a href='https://github.com/kelldm' target="_blank" rel="noopener noreferrer">
+                   <BsGithub size={43} color="#FF338B" />
+                   </a>
         </CardDetails>
     </CardContainer>
 
     <CardContainer>
         <CardDetails>
-            <TextTitle>Clean Code</TextTitle>
-            <TextBody>Seguindo as melhores práticas do mercado para desenvolver e manter a qualidade do código.</TextBody>
+           <a href='https://www.instagram.com/kelldm_/' target="_blank" rel="noopener noreferrer">
+                   <BsInstagram size={40} color="#FF338B"/>
+                 </a>
         </CardDetails>
     </CardContainer>
 
