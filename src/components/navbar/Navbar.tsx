@@ -29,7 +29,7 @@ function Navbar() {
           <NavLink href="#contact">Contact</NavLink>
         </MenuItem>
         <MenuItem>
-        <MdLightbulb />
+        {/* <MdLightbulb /> */}
         </MenuItem>
       </Menu>
     </StyledNavbar>

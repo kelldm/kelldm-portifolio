@@ -53,7 +53,7 @@ const itemVariants = {
 
 const PlayInput = () => {
   const handleClick = () => {
-    window.open('https://www.exemplo.com', '_blank'); // Altere o link para o destino desejado
+    window.open('https://www.exemplo.com', '_blank');
   };
 
   return (
