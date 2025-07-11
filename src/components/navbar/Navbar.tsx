@@ -26,10 +26,13 @@ function Navbar() {
           <NavLink href="#skills">Skills</NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink href="#contact">Contact</NavLink>
+          <NavLink href="#contact">Services</NavLink>
         </MenuItem>
         <MenuItem>
-        {/* <MdLightbulb /> */}
+          <NavLink href="#questions">Q&A</NavLink>
+        </MenuItem>
+        <MenuItem>
+          <NavLink href="#messages">Contact</NavLink>
         </MenuItem>
       </Menu>
     </StyledNavbar>

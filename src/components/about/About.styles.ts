@@ -6,8 +6,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffbdd9;
-    
   }
 `;
 
@@ -72,7 +70,7 @@ export const DownloadButton = styled.button`
   background-color: #007bff;
   border: none;
   border-radius: 16px;
-  cursor: pointer;
+  cursor: url('http://www.rw-designer.com/cursor-extern.php?id=94532'), pointer;
   transition: background-color 0.3s;
 
   &:hover {

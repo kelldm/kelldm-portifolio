@@ -43,19 +43,20 @@ export default function Techstack() {
           {hoverText}
         </motion.div>
       </TextContainer>
-      <SymbolContainer>
-      <Hime src={techan} alt="Hime"/>
-
-        {symbols.map(({ id, text, icon }) => (
-          <SymbolBox
-            key={id}
-            onMouseEnter={() => setHoverText(text)}
-            onMouseLeave={() => setHoverText("Here are some of my habilities with coding languages, feel free to explore, I’ll explain anyone to you.")}
-          >
-            {icon}
-          </SymbolBox>
-        ))}
-      </SymbolContainer>
+      <div style={{ position: 'relative' }}>
+        <Hime src={techan} alt="Hime"/>
+        <SymbolContainer>
+          {symbols.map(({ id, text, icon }) => (
+            <SymbolBox
+              key={id}
+              onMouseEnter={() => setHoverText(text)}
+              onMouseLeave={() => setHoverText("Here are some of my habilities with coding languages, feel free to explore, I’ll explain anyone to you.")}
+            >
+              {icon}
+            </SymbolBox>
+          ))}
+        </SymbolContainer>
+      </div>
     </Container>
   );
 }

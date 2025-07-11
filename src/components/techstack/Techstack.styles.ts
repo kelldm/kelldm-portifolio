@@ -5,8 +5,7 @@ export const Container = styled.div`
   margin-top:200px;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 24px;
+  padding: 1rem;
 `;
 
 export const Title = styled.div`
@@ -38,7 +37,6 @@ export const TextContainer = styled.div`
     font-weight: bold;
   }
 
-  /* Triângulo (ponteiro do balão) */
   &::after {
     content: "";
     position: absolute;
@@ -76,7 +74,8 @@ export const SymbolBox = styled.div`
   border: 2px solid #ec4899;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  z-index: 2;
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=94532'), pointer;
   transition: background-color 0.3s;
 
     svg {
@@ -95,11 +94,11 @@ export const SymbolBox = styled.div`
   }
 `;
 export const Hime = styled.img`
-  position: absolute; /* Posiciona a imagem em relação ao container */
-  top: -120%; /* Move a imagem para cima, de modo que metade dela fique visível no topo */
-  left: 0; /* Alinha à esquerda do container */
-  width: 400px; /* Ajuste a largura da imagem conforme necessário */
+  position: absolute; 
+  top: -120%; 
+  left: 0; 
+  width: 400px; 
   height: auto;
-  z-index: -1; /* Garante que a imagem fique atrás do container */
+  z-index: 0; 
 `;
 

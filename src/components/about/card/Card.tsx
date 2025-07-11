@@ -1,7 +1,5 @@
 import React from "react";
-import {
-   CardContainer, CardDetails, TextTitle, TextBody, Container, Title
-  } from "./Card.styles.ts";
+import {  CardContainer, CardDetails,  Container, } from "./Card.styles.ts";
 import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 
 function Card() {

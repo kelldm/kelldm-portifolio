@@ -44,7 +44,7 @@ export const MenuButton = styled.button`
   display: none; 
   background: transparent;
   border: none;
-  cursor: pointer;
+   cursor: url('http://www.rw-designer.com/cursor-extern.php?id=94532'), pointer;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -77,7 +77,7 @@ export const MenuItem = styled.li`
 export const NavLink = styled.a`
   text-decoration: none;
   color: #fff;
-  cursor: pointer;
+   cursor: url('http://www.rw-designer.com/cursor-extern.php?id=94532'), pointer;
   padding:10px;
 
 

@@ -35,7 +35,7 @@ const PlayIcon = styled(FaPlay)`
   right: 10px;
   font-size: 20px;
   color: #999; 
-  cursor: pointer;
+    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=94532'), pointer;
   transition: color 0.3s ease;
 
   &:hover {

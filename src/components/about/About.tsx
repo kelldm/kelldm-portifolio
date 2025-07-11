@@ -48,7 +48,7 @@ function About() {
         <TextBox>
           <TextHeader> 
              <TextTitle  variants={itemVariants} >Oh, Who I’m? Well... </TextTitle>
-            <TextSubtitle  variants={itemVariants} >A Passionate Developer based in Rio de Janeiro, Brazil. 📍</TextSubtitle>
+            <TextSubtitle  variants={itemVariants} >A Passionate <span style={{color:'#FFAC59'}}>Developer</span> based in  <span style={{color:'#FFAC59'}}>Rio de Janeiro</span>, Brazil. 📍</TextSubtitle>
           
           </TextHeader>
         
@@ -63,7 +63,7 @@ function About() {
             create innovative, user-centric solutions together!
           </Subtitle>
           <Subtitle  variants={itemVariants}>
-          Feel free to contact me, master.
+          Feel free to contact me, <span style={{color:'#FF338B'}}>master</span>.
           </Subtitle>
           <Card/>
         </TextBox>

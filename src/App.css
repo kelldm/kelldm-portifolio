@@ -9,6 +9,10 @@
 
 html, body {
   overflow-x: hidden;
+  background-color: #ffbdd9;
+  background-image: url('./imgs/petals.png');
+  background-repeat: repeat; 
+  background-size: contain;
 }
 
 html {
@@ -34,11 +38,6 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh; 
-  background-image: url('./imgs/petals.png'); 
-  background-position: right;
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  transform: rotateY(180deg);
 }
 
 
